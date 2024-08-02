@@ -12,7 +12,7 @@ public class DivisionClass
         }
         catch (ArithmeticException e)
         {
-            throw new ArithmeticException("Denominator cannot be zero!");
+            throw e;
         }
 
     }
@@ -20,7 +20,7 @@ public class DivisionClass
     public static void performDivision(int numerator,int denominator) throws ArithmeticException
     {
         if(denominator==0)
-            throw new ArithmeticException("Denominator is 0!");
+            throw new ArithmeticException("Denominator cannot be zero!!");
         else
         {
             System.out.println("Result:"+numerator/denominator);
